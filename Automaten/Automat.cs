@@ -157,7 +157,7 @@ namespace Automaten
 
                 while (money > 0)
                 {
-                    for (int i = 0; i < coins.Length; i++)
+                    for (int i = coins.Length - 1; i > 0; i--)
                     {
                         if (money >= coins[i]) 
                         {
@@ -179,6 +179,8 @@ namespace Automaten
 
 
             }
+
+            Console.WriteLine($"Item: {varer[input].name}");
 
             Console.WriteLine();
 
